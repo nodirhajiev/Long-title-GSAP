@@ -6,6 +6,14 @@ const results = Splitting({
   by: 'chars',
 })
 
+gsap.from('.char, .text_area', 1.5, {
+    duration: 1.5,
+    opacity: 1,
+    y: 500,
+    stagger: 0.09,
+    ease: 'elastic.out(0.2)',
+  })
+
 var btn = document.querySelector('.red:last-child')
 
 btn.addEventListener('click', function () {
